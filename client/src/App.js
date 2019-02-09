@@ -282,8 +282,10 @@ class App extends Component {
             ) : this.state.steps === 6 ? (
             <EndSummarySec func={this.addProject} finalPrice={this.state.finalPrice} project={this.state.projectsChosen.project} projPrice={this.state.projectsChosen.price} complexity={this.state.complexityChosen.complexity} compPrice={this.state.complexityChosen.price} projBudget={this.state.projInfo.projBudget} projTimeline={this.state.projInfo.projTimeline} projDesc={this.state.projInfo.projDesc} businessName={this.state.businessInfo.businessName} businesWeb={this.state.businessInfo.businesWeb} businessDesc={this.state.businessInfo.businessDesc} businessSlogan={this.state.businessInfo.businessSlogan} primColor={this.state.primColor} secColor={this.state.secColor} contactName={this.state.contactInfo.contactName} contactEmail={this.state.contactInfo.contactEmail} contactNumber={this.state.contactInfo.contactNumber} contactMessage={this.state.contactInfo.contactMessage} />
             ) : (
+            <div>
             <ProjectsList chooseProjFunc={this.chooseProject} inputTextFunc={this.inputText} projects={this.state.projects} other={this.state.other} otherProj={this.state.otherProj} />
             <ProjectsList chooseProjFunc={this.chooseProject} inputTextFunc={this.inputText} projects={this.state.projects} other={this.state.other} otherProj={this.state.otherProj} />
+            </div>
            ) 
           }
           {/*next back buttons*/}
